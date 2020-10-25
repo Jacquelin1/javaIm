@@ -66,4 +66,10 @@ public class Animal {
         }
     }
 
+    public Animal create(){
+        return new Animal();
+    }
+
+
+
 }

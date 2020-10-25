@@ -47,4 +47,14 @@ public class Cat extends Animal{
     public void run(){
         System.out.println(this.getName()+"\t"+"running");
     }
+
+    @Override   //alt+insert
+    public void eat() {
+        super.eat();
+    }
+
+    @Override
+    public Cat create() {
+        return new Cat();
+    }
 }

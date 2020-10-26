@@ -7,7 +7,7 @@ public class PolyTest {
     public static void main(String[] args) {
 
         Animal one=new Animal();//1
-        one.eat();
+//        one.eat();
 		/*向上转型、隐式转型、自动转型
         父类引用 指向 子类实例，可以调用子类重写父类的方法以及父类派生的方法，无法调用子类独有方法
 		注意：父类中的静态方法无法被子类重写，所以向上转型之后，只能调用到父类原有的静态方法
@@ -32,6 +32,7 @@ public class PolyTest {
 
         if (two instanceof Cat){
             Cat tempCat2=(Cat)two;
+            tempCat2.eat();
             tempCat2.run();
             System.out.println("two可以转换为Cat类型");
         }

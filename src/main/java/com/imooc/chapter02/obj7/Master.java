@@ -25,4 +25,21 @@ public class Master {
             ((Dog) obj).sleep();
         }
     }
+
+
+    /*
+    根据不同情况实例化
+     * 饲养何种宠物
+     * 空闲时间多：养狗狗
+     * 空闲时间不多:养猫咪
+     */
+    public Animal raise(boolean hasMuchTime){
+        if (hasMuchTime){
+            System.out.println("主人休闲时间比较充足，适合养狗狗");
+            return new Dog();
+        }else {
+            System.out.println("主人平时比较忙碌，适合养猫咪");
+            return new Cat();
+        }
+    }
 }

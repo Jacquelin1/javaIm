@@ -7,5 +7,8 @@ public class MasterTest {
         Master master=new Master();
         master.feed(one);
         master.feed(two);
+
+        boolean time=false;
+        Animal pet =master.raise(time);
     }
 }
